@@ -1,6 +1,8 @@
 import { Component } from "react";
 import styled from "styled-components";
 
+import { attributes } from "../../content/page2.md";
+
 const Container = styled.div`
   display: flex;
   width: 100%;
@@ -12,6 +14,7 @@ const Container = styled.div`
 
 export default class Home extends Component {
   render() {
-    return <Container>page2</Container>;
+    let { title } = attributes;
+    return <Container>{title}</Container>;
   }
 }
