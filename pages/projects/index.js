@@ -1,7 +1,7 @@
 import { Component } from "react";
 import styled from "styled-components";
 
-import { attributes } from "../../content/page2.md";
+import { attributes } from "../../content/projects.md";
 
 const Container = styled.div`
   display: flex;

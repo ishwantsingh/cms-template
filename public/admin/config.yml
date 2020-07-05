@@ -18,11 +18,19 @@ collections:
         file: "content/page1.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-      - label: "Page2"
-        name: "page2"
-        file: "content/page2.md"
+      - label: "Projects"
+        name: "projects"
+        file: "content/projects.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - label: "Project"
+            name: "project"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Datetime", name: "datetime", widget: "datetime" }
+              - { label: "Body", name: "body", widget: "markdown" }
       - label: "Page3"
         name: "page3"
         file: "content/page3.md"
