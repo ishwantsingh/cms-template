@@ -19,17 +19,17 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
       - label: "Page2"
-          name: "page2"
-          file: "content/page2.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
+        name: "page2"
+        file: "content/page2.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
       - label: "Page3"
-          name: "page3"
-          file: "content/page3.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
+        name: "page3"
+        file: "content/page3.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
       - label: "Page4"
-          name: "page4"
-          file: "content/page4.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
+        name: "page4"
+        file: "content/page4.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
