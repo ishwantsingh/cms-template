@@ -5,42 +5,38 @@ import styled from "styled-components";
 const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  width: 100vw;
-  height: 100vh;
-  .nav {
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-    height: 100%;
-    text-align: center;
-    align-content: center;
-    justify-self: flex-end;
-    text-decoration: none;
-  }
+  width: 100%;
+  height: 100%;
 `;
 
-// const Nav = styled.nav`
-//   display: flex;
-//   flex-direction: column;
-//   width: 15vw;
-//   height: 100%;
-//   text-align: center;
-//   align-content: center;
-//   justify-self: flex-end;
-//   text-decoration: none;
-// `;
+const Nav = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 15%;
+  text-align: center;
+  align-content: center;
+  justify-self: flex-end;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-size: 1.1rem;
+  a {
+    text-decoration: none !important;
+    color: black;
+  }
+`;
 
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 85%;
   height: 100%;
 `;
 
 const Layout = ({ children }) => {
   return (
     <Container>
-      <div className="nav">
+      <Nav>
         <Link href={"/"}>
           <a>Home</a>
         </Link>
@@ -56,7 +52,7 @@ const Layout = ({ children }) => {
         <Link href={"/page4"}>
           <a>Page 4</a>
         </Link>
-      </div>
+      </Nav>
       <Div>{children}</Div>
     </Container>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import App from "next/app";
 import styled from "styled-components";
+import "C:/nextjs/cms-template/pages/reset.css";
 
 import Layout from "../components/layout/index.js";
 

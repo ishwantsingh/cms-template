@@ -1,5 +1,4 @@
 import Head from "next/head";
-
 import { Component } from "react";
 import { attributes } from "../content/home.md";
 import content from "../content/home.md";
