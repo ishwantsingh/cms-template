@@ -1,19 +1,21 @@
-import Head from "next/head";
 import { Component } from "react";
+import styled from "styled-components";
+
 import { attributes } from "../content/home.md";
 import content from "../content/home.md";
+
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+`;
 
 export default class Home extends Component {
   render() {
     let { title } = attributes;
-    console.log(attributes, content.html);
-    return (
-      <>
-        <Head>
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        </Head>
-        <div>{title}</div>
-      </>
-    );
+    return <Container>{title}</Container>;
   }
 }

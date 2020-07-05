@@ -16,13 +16,14 @@ const Nav = styled.div`
   height: 15%;
   text-align: center;
   align-content: center;
-  justify-self: flex-end;
+  align-self: flex-end;
   justify-content: space-evenly;
-  text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  margin-bottom: 5%;
   a {
-    text-decoration: none !important;
+    text-decoration: none;
     color: black;
+    width: 100%;
   }
 `;
 

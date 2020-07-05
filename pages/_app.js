@@ -1,4 +1,5 @@
 import React from "react";
+// import Head from "next/head";
 import App from "next/app";
 import styled from "styled-components";
 import "C:/nextjs/cms-template/pages/reset.css";
@@ -17,6 +18,9 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Container>
+        {/* <Head>
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        </Head> */}
         <Layout>
           <Component {...pageProps} />
         </Layout>
