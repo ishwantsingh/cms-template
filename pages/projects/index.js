@@ -23,6 +23,9 @@ const Container = styled.div`
     justify-self: flex-start;
     text-align: center;
   }
+  h2 {
+    font-size: 2.6rem;
+  }
   img {
     width: 20vw;
     height: 25vw;
@@ -45,12 +48,11 @@ const Container = styled.div`
 export default class Home extends Component {
   render() {
     let { title, project } = attributes;
-    console.log(attributes, react, content);
     return (
       <Container>
         <h1 className="text">{title}</h1>
         <div className="project-content">
-          <div className="text">{project.title}</div>
+          <h2 className="text">{project.title}</h2>
           <img src={project.image} alt="project" />
           <div className="text">{project.body}</div>
         </div>

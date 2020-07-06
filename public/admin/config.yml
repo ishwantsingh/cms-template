@@ -13,11 +13,12 @@ collections:
         file: "content/home.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-      - label: "Page1"
-        name: "page1"
-        file: "content/page1.md"
+      - label: "About"
+        name: "about"
+        file: "content/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "About", name: "about", widget: "markdown" }
       - label: "Projects"
         name: "projects"
         file: "content/projects.md"

@@ -12,9 +12,9 @@ const Container = styled.div`
 const Nav = styled.div`
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  width: 13vw;
   height: 15%;
-  text-align: center;
+  text-align: left;
   align-content: center;
   align-self: flex-end;
   justify-content: space-evenly;
@@ -41,8 +41,8 @@ const Layout = ({ children }) => {
         <Link href={"/"}>
           <a>Home</a>
         </Link>
-        <Link href={"/page1"}>
-          <a>Page 1</a>
+        <Link href={"/about"}>
+          <a>About</a>
         </Link>
         <Link href={"/projects"}>
           <a>Projects</a>
