@@ -45,7 +45,7 @@ const Container = styled.div`
   }
 `;
 
-export default class Home extends Component {
+export default class Projects extends Component {
   render() {
     let { title, project } = attributes;
     return (

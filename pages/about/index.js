@@ -36,7 +36,7 @@ const Container = styled.div`
   }
 `;
 
-export default class Home extends Component {
+export default class About extends Component {
   render() {
     let { title, about } = attributes;
     return (

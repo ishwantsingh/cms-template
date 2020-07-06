@@ -12,7 +12,7 @@ const Container = styled.div`
   font-size: 3rem;
 `;
 
-export default class Home extends Component {
+export default class Page4 extends Component {
   render() {
     let { title } = attributes;
     return <Container>{title}</Container>;
