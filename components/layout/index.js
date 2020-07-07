@@ -12,7 +12,7 @@ const Container = styled.div`
 const Nav = styled.div`
   display: flex;
   flex-direction: column;
-  width: 15vw;
+  width: 12vw;
   height: 15%;
   text-align: left;
   align-content: center;
@@ -30,7 +30,7 @@ const Nav = styled.div`
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  width: 88vw;
   height: 100%;
 `;
 
