@@ -52,7 +52,7 @@ const singleBlog = ({ blog }) => {
           <img src={blog.image} alt="blog" className="image" />
           <p className="date">{blog.date}</p>
         </div>
-        <div className="text">{blog.body}</div>
+        <div className="text">{blog.description}</div>
       </div>
     </Container>
   );

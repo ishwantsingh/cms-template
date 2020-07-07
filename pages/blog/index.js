@@ -23,18 +23,19 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-self: center;
     text-align: left;
   }
   .blog {
     display: flex;
     width: 25%;
-    height: 35%;
+    height: 38%;
     border: 1px solid #cdc9c9;
     border-radius: 6px;
     a {
       text-decoration: none;
+      color: black;
       font-size: 2rem;
     }
     .text {
