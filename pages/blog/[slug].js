@@ -42,8 +42,6 @@ const Container = styled.div`
 const singleBlog = ({ blog }) => {
   if (!blog) return <div>sorry, no blog found.</div>;
 
-  // const { attributes } = blog;
-
   return (
     <Container>
       <h1>{blog.title}</h1>
