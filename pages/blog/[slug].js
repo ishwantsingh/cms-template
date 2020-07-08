@@ -59,6 +59,9 @@ const singleBlog = ({ blog }) => {
 };
 
 export async function getStaticPaths() {
+  // https://www.geeksforgeeks.org/node-js-path-join-method/ for join method
+  // https://www.geeksforgeeks.org/node-js-process-cwd-method/ for process.cwd method
+  // https://nodejs.org/api/fs.html#fs_fs_readdirsync_path_options for readdir method
   const paths = fs
     .readdirSync(path.join(process.cwd(), "content/blogs"))
     .map((blogName) => {

@@ -55,15 +55,14 @@ const Container = styled.div`
 
 const importBlogPosts = async () => {
   // https://webpack.js.org/guides/dependency-management/#requirecontext
+  // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f article for multiple markdown files
   const markdownFiles = require
     .context("../../content/blogs", false, /\.md$/)
     .keys()
     .map((relativePath) => relativePath.substring(2));
-  console.log(markdownFiles, "mdf");
   return Promise.all(
     markdownFiles.map(async (path) => {
       const markdown = await import(`../../content/blogs/${path}`);
-      console.log(markdown);
       return {
         ...markdown.attributes,
         slug: path.substring(0, path.length - 3),
@@ -92,7 +91,6 @@ const Blog = ({ postsList }) => (
 
 export async function getStaticProps() {
   const postsList = await importBlogPosts();
-  console.log(postsList);
   return {
     props: {
       postsList,
