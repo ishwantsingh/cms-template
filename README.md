@@ -1,6 +1,6 @@
 # Netlify CMS Template with Next.js
 
-This is a simple [Netlify CMS Template](https://post-it-8.firebaseapp.com/) with a blog feature.
+This is a simple [Netlify CMS Template](https://netlifycms-nextjs-template.netlify.app/) with a blog feature.
 
 # Tech-Stack
 
