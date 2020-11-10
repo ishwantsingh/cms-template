@@ -1,3 +1,4 @@
 ---
-title: Simple Template
+title: Template
 ---
+
